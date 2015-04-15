@@ -3,11 +3,21 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+$red:                   #C34C39;  
+$green:                 #33888F; 
+$green2:                #45b29d; 
+$yellow:                #f7ab24; 
+$blue:                  #1B7B98;
+$white:                 #fcfcfc;
+$black:                 #131313;
+
+
+
 body {
     width: 100%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
-    color: #fcfcfc;
+    color: $white;
     background-color: #ecf0f1;
 }
 
@@ -18,14 +28,14 @@ html {
 
 button {
     padding: 1em;
-    border: 2px solid #fcfcfc;
+    border: 2px solid $white;
     background: none;
     border-radius: 5px;
     font-size: 1.5em;
     &:hover {
-        background: #45b29d;
-        border: 2px solid darken(#45b29d, 25%);
-        color: #fcfcfc;
+        background: $green2;
+        border: 2px solid darken($green2, 25%);
+        color: $white;
     }
 }
 
@@ -71,7 +81,7 @@ a {
   border-bottom: 1px solid rgba(255,255,255,.3);
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
-  background: #1B7B98;
+  background: rgba($black,0.7);
   .navbar-brand {
     font-weight: 700;
     &:focus {
@@ -90,7 +100,7 @@ a {
 }
 
 .navbar-toggle:hover {
-    border: 1px solid #fff;
+    border: 1px solid $white;
 }
 
 .navbar-custom a {
@@ -98,7 +108,7 @@ a {
   .nav li {
   	&.active {
 	    outline: nonte;
-	    background-color: rgba(255,255,255,.3);
+	    background-color: rgba($white,.3);
 	}
 	a {
 		-webkit-transition: background .3s ease-in-out;
@@ -106,7 +116,7 @@ a {
     	transition: background .3s ease-in-out;
     	&:hover {
 		outline: 0;
-		background-color: rgba(0,0,0,.3);
+		background-color: rgba($black,.3);
 	}
   }
 }
@@ -117,7 +127,7 @@ a {
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: 0 0;
+        background: rgba($black, 0.7);
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -125,7 +135,7 @@ a {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #1B7B98;
+        background-color: $black;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -160,7 +170,7 @@ a {
 }
 
 #about {
-    background: linear-gradient(rgba(#f7ab24, 0.75), rgba(#f7ab24, 0.72)), image-url("paisley.png") repeat;
+    background: linear-gradient(rgba($yellow, 0.75), rgba($yellow, 0.72)), image-url("paisley.png") repeat;
 }
 
 .btn-circle {
@@ -168,10 +178,10 @@ a {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #fff;
+    border: 2px solid $white;
     border-radius: 35px;
     font-size: 40px;
-    color: #fff;
+    color: $white;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -181,7 +191,7 @@ a {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #fff;
+    color: $white;
 }
 
 .btn-circle i.animated {
@@ -211,10 +221,10 @@ a {
     text-align: center; 
     line-height: 2.2em;
     font-size: 30px;
-    color: #fcfcfc;
+    color: $white;
     transition: all .3s ease-in-out;
     &.twit {
-        background: #45b29d;
+        background: $green2;
         border: solid 2px darken(#6ac1b1, 15%);
         &:hover, &:active, &:focus {
             color: #313131;
@@ -229,8 +239,8 @@ a {
         border: solid 2px darken(#e89565, 15%);
     }
     &.mail {
-        background: #1B7B98;
-        border: solid 2px darken(#1B7B98, 15%);
+        background: $blue;
+        border: solid 2px darken($blue, 15%);
     }
 }
 
@@ -272,30 +282,13 @@ a .btn-outline:hover {
     }
 }
 
-.content-section {
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-.download-section {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/leaves.jpg) no-repeat center center scroll;
-    background-color: #ecf0f1;  /*#000;*/
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
 #projects {
-    background: linear-gradient(rgba(#33888F, 0.75), rgba(#33888F, 0.99)), image-url("paisley.png") repeat; 
-    color: #fcfcfc;
+    background: linear-gradient(rgba($green, 0.75), rgba($green, 0.99)), image-url("paisley.png") repeat; 
+    color: $white;
 }
 
 #contact {
-    background: linear-gradient(rgba(#C34C39, 0.75), rgba(#C34C39, 0.99)), image-url("paisley.png") repeat;
+    background: linear-gradient(rgba($red, 0.75), rgba($red, 0.99)), image-url("paisley.png") repeat;
     color: #ecf0f1;
     width: 100%;
     padding-bottom: 150px;
@@ -340,20 +333,6 @@ a .btn-outline:hover {
     transition: all .3s ease-in-out;
 }
 
-.btn-default {
-    border: 1px solid #34495e;
-    color: #fff;
-    background-color: #34495e;
-}
-
-.btn-default:hover,
-.btn-default:focus {
-    border: 1px solid #3498db;
-    outline: 0;
-    color: #fff;
-    background-color: #3498db;
-}
-
 ul.banner-social-buttons {
     margin-top: 0;
 }
@@ -383,7 +362,7 @@ ul.banner-social-buttons {
 
 footer {
     background: linear-gradient(rgba(#313131, 0.70), rgba(#111, 0.99)), image-url("paisley.png") repeat; ;
-    color: #fff;
+    color: $white;
     padding: 30px 0;
     text-align: right;
     p {
@@ -410,14 +389,14 @@ footer {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
+    background: $white;
+    background: rgba($white,.2);
 }
 
 ::selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
+    background: $white;
+    background: rgba($white,.2);
 }
 
 img::selection {
@@ -429,7 +408,7 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: rgba(255,255,255,.2);
+    webkit-tap-highlight-color: rgba($white,.2);
 }
 
 #video_background {
@@ -467,3 +446,49 @@ body {
 .nav > li > a:focus {
     color: #ecf0f1;
 }
+
+/********************************************
+EXPLAINRAILS PAGE
+********************************************/
+
+#topsec {
+    margin-top: 90px;
+    p {
+        margin: 0;
+    }
+}
+.explain {
+    margin: 0.5em 0;
+    padding: 1em;
+    &.views {
+        background: $blue;
+        border: 2px solid darken($blue, 15%);
+        border-radius: 3px;
+    }
+    &.models {
+        background: $yellow;
+        border: 2px solid darken($yellow, 15%);
+        border-radius: 3px;
+    }
+    &.controllers {
+        background: $green;
+        border: 2px solid darken($green, 15%);
+        border-radius: 3px;
+    }
+    &.routes {
+        background: $red;
+        border: 2px solid darken($red, 15%);
+        border-radius: 3px;
+    }
+}
+
+.browser {
+    margin: 0.5em 0;
+    padding: 1em;
+    background: $green2;
+    border: 2px solid darken($green2, 15%);
+    border-radius: 3px;
+    height: 100%;
+}
+
+
