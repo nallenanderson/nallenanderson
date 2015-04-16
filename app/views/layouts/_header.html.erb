@@ -4,25 +4,15 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
             <i class="fa fa-bars"></i>
         </button>
-        <%= link_to "Nathan Allen", root_path, class: "navbar-brand light" %>
+        <%= link_to "Nathan Allen", root_path, class: "navbar-brand" %>
     </div>
 
     <!-- TOGGLING -->
     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
         <ul class="nav navbar-nav">
-            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-            <li class="hidden">
-                <a href="#page-top"></a>
-            </li>
-            <li>
-                <a class="page-scroll" href="#about">About</a>
-            </li>
-            <li>
-                <a class="page-scroll" href="#projects">Projects</a>
-            </li>
-            <li>
-                <a class="page-scroll" href="#contact">Contact</a>
-            </li>
+            <li><%= link_to "About", root_path %></li>
+            <li><%= link_to "Projects", projects_path %></li>
+            <li><%= link_to "Learn Rails", explainrails_path %></li>
         </ul>
     </div>
   </div>

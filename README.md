@@ -1,28 +1,8 @@
-== README
+This is a personal project for me.  I don't really have much that I would like to share here in the README.md.  I hope that you like what I am doing.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+My site is devoted to Rails, Ruby, HTML5, CSS3, AND Sass.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
+Enjoy.
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.

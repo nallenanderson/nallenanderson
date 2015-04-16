@@ -19,6 +19,8 @@ body {
     width: 100%;
     height: 100%;
     font-family: $font1;
+    font-weight: 300;
+    font-size: 18px;
     color: $white;
     background-color: #ecf0f1;
 }
@@ -41,7 +43,7 @@ section {
     font-size: 1.5em;
     &:hover {
         background: $green2;
-        border: 2px solid darken($green2, 25%);
+        border: 2px solid darken($green2, 12%);
         color: $white;
     }
 }
@@ -69,18 +71,14 @@ p {
 }
 
 a {
-  color: #3498db;
+  color: $white;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   &:hover, &:focus {
   	text-decoration: none;
-  	color: #8e44ad;
+  	color: $blue;
   }
-}
-
-.light {
-    font-weight: 400;
 }
 
 .navbar-custom {
@@ -92,18 +90,20 @@ a {
   .navbar-brand {
     font-weight: 700;
     &:focus {
-			outline: 0;
-		}
-		.navbar-toggle {
+		outline: 0;
+	}
+    &:hover {
+        color: $blue;
+    }
+	.navbar-toggle {
 	    padding: 4px 6px;
 	    font-size: 16px;
 	    color: #fff;
-	    &:focus, &:active {
-	    	outline: 0;
-	    }
-		}
-	} 
-
+        &:focus, &:active {
+        	outline: 0;
+        }
+	}
+  } 
 }
 
 .navbar-toggle:hover {
@@ -485,7 +485,7 @@ EXPLAINRAILS PAGE
 ********************************************/
 
 #topsec {
-    margin-top: 90px;
+    margin-top: 60px;
     p {
         margin: 0;
     }
@@ -532,7 +532,7 @@ EXPLAINRAILS PAGE
     background: $green2;
     border: 3px solid darken($green2, 15%);
     border-radius: 4px;
-    height: 541px;
+    height: 603px;
     .desky {
         text-align: center;
         position: absolute;
@@ -542,4 +542,11 @@ EXPLAINRAILS PAGE
     }
 }
 
+/********************************************
+PROJECTS PAGE
+********************************************/
 
+#myProjects {
+    color: $black;
+    margin-top: 60px;
+}
