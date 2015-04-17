@@ -16,8 +16,8 @@
 //= require bootstrap-sprockets
 //= require jquery.sidr
 //= require jquery.easing
-//= require turbolinks
 //= require_tree .
+//= require turbolinks
 
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
