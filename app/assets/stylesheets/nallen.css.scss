@@ -162,7 +162,7 @@ a {
 
 @media(min-width:980px) {
     #intro {
-        height: 550px;
+        height: 620px;
         padding: 0;
         .intro-body {
             .brand-heading {
@@ -177,7 +177,7 @@ a {
 
 @media(max-width:979px) {
     #intro {
-        height: 400px;
+        height: 500px;
         padding: 0;
         .intro-body {
             .brand-heading {
@@ -189,7 +189,7 @@ a {
             padding: 20%;
         }
         .overlay {
-            height: 400px;
+            height: 500px;
         }
     }
 }
@@ -459,9 +459,9 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba($blue, 0.3);
+    background: rgba($black, 0.01);
     width: 100%;
-    height: 550px;;   
+    height: 620px;;   
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
