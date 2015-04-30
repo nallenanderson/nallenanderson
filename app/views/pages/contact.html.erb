@@ -1,5 +1,5 @@
 <section>
-	<div id="pagcontacto" class="container">
+	<div id="pagcontacto">
 	  <div class="row">
 	    <div id="forming" class="col-sm-8">
 	      <h1>Contacto</h1>
@@ -49,4 +49,19 @@
 	  </div>
 	</div>
 </section>
+
+<script>
+      $(window).resize(function(){
+
+        $('#pagecontacto').css({
+          position:'absolute',
+          left: ($(window).width() - $('#pagecontacto').outerWidth())/2,
+          top: ($(window).height() - $('#pagecontacto').outerHeight())/2
+        });
+
+      });
+
+      // To initially run the function:
+      $(window).resize();
+    </script>
 
