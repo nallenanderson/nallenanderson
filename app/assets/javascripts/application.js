@@ -14,7 +14,6 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require jquery.sidr
 //= require jquery.easing
 //= require turbolinks
 //= require_tree .
