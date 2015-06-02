@@ -33,6 +33,14 @@ section {
     padding: 80px 0;
 }
 
+.alert {
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  border-radius: 0;
+  padding: 15px 0;
+}
+
 .button-o {
     color: $white;
     padding: 1em;
@@ -40,6 +48,8 @@ section {
     background: none;
     border-radius: 5px;
     font-size: 1em;
+    display: inline-block;
+    margin-bottom: 5px;
     &:hover {
         background: $green2;
         border: 2px solid darken($green2, 12%);
@@ -653,6 +663,10 @@ label {
   margin-bottom: 20px;
   background: #efefef;
   box-shadow: 1px 1px 10px #131313;
+  h1.visible-xs {
+    margin-bottom: 20px;
+    color: $black;
+  }
 }
 
 #contact p, #contact ul li {

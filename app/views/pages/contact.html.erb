@@ -5,29 +5,29 @@
 	      <h1>Contacto</h1>
 	      <p class="lead">Mándame un mensaje para dar feedback o sugerencias, hablar de tus proyectos y necesidades o simplemente saludarme.  ¡Gracias!</p>
 
-	      <form action="http://formspree.io/nallenanderson@gmail.com" method="POST">
+	      <%= form_for Lead.new do |f| %>
 	        <div class="row">
 	          <div class="form-group col-xs-6">
-	            <label for="nombre">NOMBRE:</label>
-	            <input type="text" required placeholder="Me llamo..." name="nombre" id="nombre" class="formmer"/>
+	            <label>NOMBRE:</label>
+	            <%= f.text_field :name, class: "formmer", placeholder: "Tu nombre...", required: true %>
 	          </div>
 	          <div class="form-group col-xs-6">
 	            <label for="nombre">EMAIL:</label>
-	            <input type="email" required placeholder="juan@garcia.com" id="email" class="formmer" name="_replyto" />
+	            <%= f.email_field :email, class: "formmer", placeholder: "Tu email...", required: true %>
 	          </div>
 	        </div>
 	        <div class="form-group">
 	          <label for="mensaje">MENSAJE:</label>
-	          <textarea placeholder="Escribe tu mensaje aquí..." id="mensaje" name="mensaje" class="formmer" rows="4"></textarea>
+	          <%= f.text_area :notes, rows: "4", class: "formmer", placeholder: "Deja un mensaje aqui...", required: true %>
 	        </div>
-	        <input type="hidden" name="_subject" value="Formulario de Contacto de tu Página" />
-	        <input type="text" name="_gotcha" style="display:none" />
-	        <input type="hidden" name="_next" value="http://www.nallenanderson.com" />
-	        <button type="submit" value="Send" class="button jumpr pull-right">SUBIR</button>
-	      </form>
+	        <%= button_tag class: "button jumpr pull-right" do %>
+	        	Enviar
+	        <% end %>
+	      <% end %>
 	      
 	    </div>
 	    <div id="contacto" class="col-sm-4">
+	    	<h1 class="visible-xs">Datos de Contacto</h1>
 	      <h4>EMAIL</h4>
 	      <p>nate@devocode.com</p>
 	      <h4>TELÉFONO</h4>

@@ -46,6 +46,15 @@
 </head>
 <body>
 
+		<% flash.each do |name, msg| %>
+			<%= content_tag(:div, msg, class: "alert alert-info fade in") do %>
+				<div class="container">
+					<%= msg %>
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+				</div>
+			<% end %>
+		<% end %>
+
 	<%= render "layouts/header" %>
 	<%= yield %>
   <%= render "layouts/footer" %>
