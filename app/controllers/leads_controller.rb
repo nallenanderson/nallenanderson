@@ -9,6 +9,7 @@ class LeadsController < ApplicationController
 		@lead = Lead.new lead_params
 		if @lead.save
 			redirect_to contact_path, notice: "Gracias por el mensaje.  Estaremos en contacto! Si necesitas ponerte en contacto ahora mismo, usa los datos a la derecha."
+			LeadMailer.new_lead(@lead).deliver_later
 		else
 			redirect_to contact_path, alert: "La cagaste mal...inténtalo de nuevo."
 		end
