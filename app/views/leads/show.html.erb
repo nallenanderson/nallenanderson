@@ -17,9 +17,10 @@
 				<%= @lead.notes %>
 			</textarea>
 		</div>
-		<%= link_to "Back", leads_path, class: "btn btn-lg btn-default pull-right" %>
-		<%= link_to "Delete", @lead, class: "btn btn-lg btn-danger pull-right", method: :delete, data: {confirm: "Are you sure?"} %>
-		<%= mail_to @lead.email, class: "btn btn-lg btn-info" do %>
+		
+		<%= link_to "Delete", @lead, class: "btn btn-danger pull-right bye", method: :delete, data: {confirm: "Are you sure?"} %>
+		<%= link_to "Back", leads_path, class: "btn btn-default pull-right" %>
+		<%= mail_to @lead.email, class: "btn btn-info" do %>
 			Send Email <i class="fa fa-envelope fa-fw contact"></i>
 			<% end %>
 			
