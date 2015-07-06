@@ -1,4 +1,5 @@
 class LeadsController < ApplicationController
+	before_action :set_lead, only: [:show, :edit, :update, :destroy]
 
 	def index
 		@lead = Lead.all
@@ -13,7 +14,19 @@ class LeadsController < ApplicationController
 		end
 	end
 
+	def destroy
+	  @lead.destroy
+	  respond_to do |format|
+	    format.html { redirect_to leads_url, notice: 'Lead was successfully deleted.' }
+	    format.json { head :no_content }
+	  end
+	end
+
 	private
+
+	def set_lead 
+		@lead = Lead.find(params[:id])
+	end
 
 	def lead_params
 		params.require(:lead).permit(:name, :email, :notes)

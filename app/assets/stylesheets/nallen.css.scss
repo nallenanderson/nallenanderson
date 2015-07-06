@@ -71,6 +71,12 @@ p {
     line-height: 1.5;
 }
 
+table {
+  tr td:last-child, th:last-child {
+    text-align: center;
+  }
+}
+
 @media(min-width:767px) {
   p {
     margin: 0 0 35px;
@@ -567,41 +573,65 @@ label {
 }
 
 #pagcontacto {
-    font-size: 20px;
-    line-height: 1.2;
-    color: #555;
-    background: #fcfcfc;
-    font-weight: 300;
-    background: none;
-    margin-top: 1.2em;
-    h1, h2, h3 {
-      color: $blue;
-      margin-top: 0;
-      margin-bottom: 0.2em;
-    }
-    h4, h5 {
-      color: $blue;
-      margin-top: 0;
-      margin-bottom: 0.2em;
-    }
-    p {
-      margin: 0 0 1.5em;
-    }
-    label {
-      font-weight: 500;
-      color: rgba($red,0.95);
-    }
-    .fa, .fa-border {
-      color: $blue;
-      border-color: $blue;
-      transition: all 0.9s ease-in-out;
-    }
-
-    .fa:hover, .fa-border:hover {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #555;
+  background: #fcfcfc;
+  font-weight: 300;
+  background: none;
+  margin-top: 1.2em;
+  h1, h2, h3 {
+    color: $blue;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+  }
+  h4, h5 {
+    color: $blue;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+  }
+  p {
+    margin: 0 0 1.5em;
+  }
+  label {
+    font-weight: 500;
+    color: rgba($red,0.95);
+  }
+  .fa, .fa-border {
+    color: $blue;
+    border-color: $blue;
+    transition: all 0.9s ease-in-out;
+    &:hover {
       color: $red;
       border-color: $red;
       transition: all 0.2s ease-in-out;
     }
+    &.contact {
+      color: $white;
+    }
+  }
+  .view {
+    color: $blue;
+    padding-right: 0.5em;
+    &:hover {
+      color: darken($blue, 5%);
+    }
+  }
+  .remove {
+    color: $red;
+    &:hover {
+      color: darken($red, 5%);
+    }
+  }
+  .notes {
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 400;
+    border: 1px solid rgba(136,136,136,0.3);
+    border-radius: 3px;
+    background: #f9f9f9;
+    margin: 10px 0;
+  }
 }
 
 

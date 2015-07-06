@@ -1,0 +1,27 @@
+<section>
+	<div id="pagcontacto">
+		<div class="container">
+			<h1>Contact Information</h1><br>
+			<div class="row">
+				<div class="col-xs-6">
+					<h4>Name</h4>
+					<p class="lead"><%= @lead.name %></p>
+				</div>
+				<div class="col-xs-6">
+					<h4>Email</h4>
+					<p class="lead"><%= @lead.email %></p>
+				</div>
+			</div>
+			<h4>Message</h4>
+			<div class="notes">
+				<%= @lead.notes %>
+			</textarea>
+		</div>
+		<%= link_to "Back", leads_path, class: "btn btn-lg btn-default pull-right" %>
+		<%= link_to "Delete", @lead, class: "btn btn-lg btn-danger pull-right", method: :delete, data: {confirm: "Are you sure?"} %>
+		<%= mail_to @lead.email, class: "btn btn-lg btn-info" do %>
+			Send Email <i class="fa fa-envelope fa-fw contact"></i>
+			<% end %>
+			
+	</div>
+</section>
