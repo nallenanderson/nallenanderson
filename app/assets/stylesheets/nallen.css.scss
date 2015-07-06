@@ -634,7 +634,7 @@ label {
   margin-bottom: 20px;
   color: $black;
   padding: 2em;
-  height: 520px;
+  height: 550px;
   background: #fafafa;
   box-shadow: 1px 1px 10px #131313;
   h1 {
@@ -658,7 +658,7 @@ label {
 
 #contacto {
   padding: 2em;
-  height: 520px;
+  height: 550px;
   color: $black;
   margin-bottom: 20px;
   background: #efefef;
@@ -678,6 +678,9 @@ label {
   background: $white;
   border: none;
   color: $black;
+  position: absolute;
+  bottom: 15px;
+  right: 40px;
 }
 
 .jumpr::before {

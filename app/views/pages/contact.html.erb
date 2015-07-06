@@ -20,7 +20,7 @@
 	          <label for="mensaje">MENSAJE:</label>
 	          <%= f.text_area :notes, rows: "4", class: "formmer", placeholder: "Deja un mensaje aqui...", required: true %>
 	        </div>
-	        <%= button_tag class: "button jumpr pull-right" do %>
+	        <%= button_tag class: "button jumpr" do %>
 	        	Enviar
 	        <% end %>
 	      <% end %>
@@ -49,19 +49,3 @@
 	  </div>
 	</div>
 </section>
-
-<script>
-      $(window).resize(function(){
-
-        $('#pagecontacto').css({
-          position:'absolute',
-          left: ($(window).width() - $('#pagecontacto').outerWidth())/2,
-          top: ($(window).height() - $('#pagecontacto').outerHeight())/2
-        });
-
-      });
-
-      // To initially run the function:
-      $(window).resize();
-    </script>
-
