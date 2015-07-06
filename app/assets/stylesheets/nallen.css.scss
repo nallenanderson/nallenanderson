@@ -193,22 +193,22 @@ a {
 }
 
 @media(max-width:979px) {
-    #intro {
-        height: 500px;
-        padding: 0;
-        .intro-body {
-            .brand-heading {
-                font-size: 60px;
-            }
-            .intro-text {
-                font-size: 25px;
-            }
-            padding: 20%;
-        }
-        .overlay {
-            height: 500px;
-        }
+  #intro {
+    height: 500px;
+    padding: 0;
+    .intro-body {
+      padding: 250px;
+      .brand-heading {
+          font-size: 60px;
+      }
+      .intro-text {
+          font-size: 25px;
+      }
     }
+    .overlay {
+      height: 500px;
+    }
+  }
 }
 
 #about {
@@ -465,7 +465,7 @@ body {
 
 .intro-body {
     z-index: 2;
-    padding-top: 20%;
+    padding-top: 250px;
     line-height: 1;
     color: $white;
     width: 100%;
