@@ -7,16 +7,19 @@
   </head>
   <body>
     <h2 style='font-family: "Roboto", sans-serif; margin-bottom: 20px; font-size: 24px; font-weight: 500; line-height: 1.4;'>Hey Nate! You've got a message.</h2>
-    <h3 style='font-family: "Roboto", sans-serif; margin-bottom: 20px; font-size: 20px; font-weight: 500; line-height: 1.4;'>Name: </h3>
+    <h3 style='font-family: "Roboto", sans-serif; margin-bottom: 5px; font-size: 18px; font-weight: 500; line-height: 1.4;'>Name:</h3>
       
     <p style='font-family: "Roboto", sans-serif; font-size: 18px; font-weight: 300; padding-bottom: 15px;'><%= @lead.name %></p>
     
-    <h3 style='font-family: "Roboto", sans-serif; margin-bottom: 20px; font-size: 20px; font-weight: 500; line-height: 1.4;'>Email: </h3>
+    <h3 style='font-family: "Roboto", sans-serif; margin-bottom: 5px; font-size: 18px; font-weight: 500; line-height: 1.4;'>Email:</h3>
       
     <p style='font-family: "Roboto", sans-serif; font-size: 18px; font-weight: 300; padding-bottom: 15px;'><%= @lead.email %></p>
 
-    <h3 style='font-family: "Roboto", sans-serif; margin-bottom: 20px; font-size: 20px; font-weight: 500; line-height: 1.4;'>Message: </h3>
-    <pstyle='font-family: "Roboto", sans-serif; font-size: 18px; font-weight: 300; padding-bottom: 15px;' ><%= @lead.notes %></p>
+    <h3 style='font-family: "Roboto", sans-serif; margin-bottom: 5px; font-size: 18px; font-weight: 500; line-height: 1.4;'>Message:</h3>
+
+    <p style='font-family: "Roboto", sans-serif; font-size: 18px; font-weight: 300; padding-bottom: 15px;' ><%= @lead.notes %></p>
+
+    <%= link_to 'Go to Message', @lead, style: 'padding: 10px 16px; font-size: 20px; line-height: 1.3333333; border-radius: 6px; color: #fcfcfc; background: #5bc0de; border: 1px solid #46b8da; text-decoration: none;' %>
 
     <p style='font-family: "Roboto", sans-serif; font-size: 18px; font-weight: 300;'>Always your secret admirer,</p>
 
