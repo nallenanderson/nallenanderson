@@ -1,0 +1,25 @@
+<%= form_for Lead.new do |f| %>
+  
+  <div class="row">
+
+    <div class="form-group col-xs-6">
+      <label>NOMBRE:</label>
+      <%= f.text_field :name, class: "formmer", placeholder: "Tu nombre...", required: true %>
+    </div>
+
+    <div class="form-group col-xs-6">
+      <label>EMAIL:</label>
+      <%= f.email_field :email, class: "formmer", placeholder: "Tu email...", required: true %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>MENSAJE:</label>
+    <%= f.text_area :notes, rows: "4", class: "formmer", placeholder: "Deja un mensaje aqui...", required: true %>
+  </div>
+
+  <%= button_tag class: "btn btn-lg btn-info pull-right" do %>
+  	Enviar
+  <% end %>
+
+<% end %>
