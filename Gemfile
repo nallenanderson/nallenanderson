@@ -16,6 +16,7 @@ gem 'awesome_print', group: :development
 gem "paperclip", "~> 4.2"
 gem 'jquery-easing-rails', '~> 0.0.2'
 gem 'turbolinks'
+gem 'meta-tags', '~> 2.0.0'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
